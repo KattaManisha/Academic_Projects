@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Astronomical Picture of the Day</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body class="nasa_rltd_class">
+    <h1 class="title_class">Astronomical Picture of the Day</h1>
+    <div class="main-container">
+      <h2>{{ title }}</h2>
+      <p class="explanatory_para">{{ explanation }}</p>
+      <img src="{{ image_url }}" alt="APOD Image" class="img_url" />
+    </div>
+  </body>
+</html>

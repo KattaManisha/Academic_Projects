@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EPIC</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body class="nasa_rltd_class">
+    <h1 class="title_class">Earth Polychromatic Imaging Camera</h1>
+    <div class="main-container">
+      <p>{{ caption }}</p>
+      <img src="{{ image_url }}" alt="EPIC Image" class="img_url" />
+      <p>Date : {{ date }}</p>
+      <p>Centroid Coordinates: {{centroid_coordinates }}</p>
+      <p>Attitude Quaternions: {{attitude_quaternions }}</p>
+      <p>Position of the Moon: {{lunar_j2000_position }}</p>
+      <p>Position of the Sun: {{sun_j2000_position }}</p>
+    </div>
+  </body>
+</html>
