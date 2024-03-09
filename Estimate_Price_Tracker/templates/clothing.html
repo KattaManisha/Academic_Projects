@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/styles.css') }}"
+    />
+    <script defer src="{{ url_for('static', filename='index.js') }}"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <section class="main-container2">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">EstiMateIt</a>
+          <button class="btn btn-outline-light" id="backButton">Back</button>
+        </div>
+      </nav>
+      <h2 class="productsTitle mt-3"><i>Clothing and Fashion</i></h2>
+      <hr />
+      <h2 class="productsTitle mt-0"><u>Women's Clothing</u></h2>
+
+      <div class="card-group">
+        <div
+          class="card border border-info shadow-0 bg-light mb-3"
+          id="secondCard"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">Women's Sweater</div>
+          <img
+            src="{{ url_for('static', filename='assets/images/Sweater.jpg') }}"
+            height="250px"
+            width="auto"
+            class="card-img-top"
+            alt="Watches Photo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Red Sweater</h5>
+            <a
+              href="/compare_prices?amazon_url= https://www.amazon.com/dp/B0CJP4F938?ref_=cm_sw_r_cso_wa_apin_dp_TRZ6Q1VPXDEYBH8JM3ZX&cafHiResImg=1&language=en-US&th=1&ebay_url=https://www.ebay.com/itm/394983955389?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=yq_y4tveq3e&sssrc=4429486&ssuid=8jcvtrvssmq&var=663555745679&widget_ver=artemis&media"
+            >
+              <button type="button" class="btn btn-warning" id="compareButton">
+                Compare Prices
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="card border border-info shadow-0 bg-light mb-3"
+          id="thirdCard"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">Women's Shirt</div>
+          <img
+            src="{{ url_for('static', filename='assets/images/shirt.jpg') }}"
+            height="250px"
+            width="auto"
+            class="card-img-top"
+            alt="Watches Photo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Shirt</h5>
+            <a
+              href="/compare_prices?amazon_url=https://a.co/d/1XmLU8D&ebay_url=https://www.ebay.com/itm/186026071391?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=02qxhgtzrcy&sssrc=4429486&ssuid=8jcvtrvssmq&var=694044509080&widget_ver=artemis&media=WHATS_APP"
+              ><button type="button" class="btn btn-warning" id="compareButton">
+                Compare Prices
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <h2 class="productsTitle mt-0"><u>Men's Clothing</u></h2>
+      <div class="card-group">
+        <div
+          class="card border border-info shadow-0 bg-light mb-3"
+          id="secondCard"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">Men's Hoodie</div>
+          <img
+            src="{{ url_for('static', filename='assets/images/adidasHoodie.jpg') }}"
+            height="250px"
+            width="auto"
+            class="card-img-top"
+            alt="Watches Photo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Adidas Red Hoodie</h5>
+            <a
+              href="/compare_prices?amazon_url=https://a.co/d/efyKZEf&ebay_url=https://www.ebay.com/itm/126040872900?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=Z0g5NsIDTh2&sssrc=4429486&ssuid=8jcvtrvssmq&var=&widget_ver=artemis&media"
+              ><button type="button" class="btn btn-warning" id="compareButton">
+                Compare Prices
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="card border border-info shadow-0 bg-light mb-3"
+          id="thirdCard"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">Men's Jacket</div>
+          <img
+            src="{{ url_for('static', filename='assets/images/columbiaJacket.jpg') }}"
+            height="250px"
+            width="auto"
+            class="card-img-top"
+            alt="Watches Photo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Columbia Men's Jacket</h5>
+            <a
+              href="/compare_prices?amazon_url=https://a.co/d/6M2bFp6&ebay_url=https://www.ebay.com/itm/386231133844?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=3Jt2tSFISeS&sssrc=4429486&ssuid=8jcvtrvssmq&var=&widget_ver=artemis&media=WHATS_APP"
+              ><button type="button" class="btn btn-warning" id="compareButton">
+                Compare Prices
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <h2 class="productsTitle mt-0"><u>Footwear</u></h2>
+      <div class="card-group">
+        <div
+          class="card border border-info shadow-0 bg-light mb-3"
+          id="thirdCard"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">Women's Loafer</div>
+          <img
+            src="{{ url_for('static', filename='assets/images/DeYashopin.jpg') }}"
+            height="250px"
+            width="auto"
+            class="card-img-top"
+            alt="Loafers Photo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">DeYashopin Loafers</h5>
+            <a
+              href="/compare_prices?amazon_url=https://a.co/d/ams78Bm&ebay_url=https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2332490.m570.l1313&_nkw=DeYashopin+Women%27s+Flats+Shoes+Leisure+Shoes+Slip+On+Work+Shoes+Comfort+Walking+Shoes&_sacat=0"
+              ><button type="button" class="btn btn-warning" id="compareButton">
+                Compare Prices
+              </button></a
+            >
+          </div>
+        </div>
+        <div
+          class="card border border-info shadow-0 bg-light mb-3"
+          id="seventhCard"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">Men's Football Cleat</div>
+          <img
+            src="{{ url_for('static', filename='assets/images/footballCleats.jpg') }}"
+            height="250px"
+            width="auto"
+            class="card-img-top"
+            alt="Football Cleats Photo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Sport shoes</h5>
+            <a
+              href="/compare_prices?amazon_url=https://a.co/d/hPrvfZA&ebay_url=https://www.ebay.com/itm/394830131159?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=EobfBO-ySn2&sssrc=4429486&ssuid=8jcvtrvssmq&var=663396013623&widget_ver=artemis&media=WHATS_APP"
+              ><button type="button" class="btn btn-warning" id="compareButton">
+                Compare Prices
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white bg-dark">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                Estimate It
+              </h6>
+              <div class="text-start">
+                <p>
+                  Effortlessly manage project budgets with the Estimate Price
+                  Tracker.
+                </p>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+        
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <div id="contactUsDiv">
+                <p>
+                  Have questions, suggestions, or feedback <br><br>
+                  Please email us at <a class="text-white" id = "connectUsEmailLink" href= "mailto:connect@estimateit.com">connect@estimateit.com</a>
+                </p>
+              </div>
+          </div>  
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/"
+          >estimateit.com</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+</html>

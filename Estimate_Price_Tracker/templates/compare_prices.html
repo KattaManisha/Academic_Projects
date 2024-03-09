@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compare Prices</title>
+  <!-- Bootstrap CSS -->
+  <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/styles.css') }}"
+    />
+    <script defer src="{{ url_for('static', filename='index.js') }}"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+</head>
+
+<body>
+  <main>
+  <section class="main-container3">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">EstiMateIt</a>
+        <button class="btn btn-outline-light" id="backButton">Back</button>
+      </div>
+    </nav>
+  <div class="container mt-4">
+    <h1>Price Comparison</h1>
+    <table class="table custom-table">
+      <thead class="thead-light">
+        <tr>
+          <th>Website</th>
+          <th>Website URL</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Amazon</td>
+          <td><a href="{{amazon_web_url}}">{{amazon_web_url}}</a></td>
+          <td class="bold-price">{{amazon_product_price}}</td>
+        </tr>
+        <tr>
+          <td>eBay</td>
+          <td><a href="{{ebay_web_url}}">{{ebay_web_url}}</a></td>
+          <td class="bold-price">{{ebay_product_price}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</main>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white bg-dark">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                Estimate It
+              </h6>
+              <div class="text-start">
+                <p>
+                  Effortlessly manage project budgets with the Estimate Price
+                  Tracker.
+                </p>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+        
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <div id="contactUsDiv">
+                <p>
+                  Have questions, suggestions, or feedback <br><br>
+                  Please email us at <a class="text-white" id = "connectUsEmailLink" href= "mailto:connect@estimateit.com">connect@estimateit.com</a>
+                </p>
+              </div>
+          </div>  
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/"
+          >estimateit.com</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+<!-- Bootstrap JS and other scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

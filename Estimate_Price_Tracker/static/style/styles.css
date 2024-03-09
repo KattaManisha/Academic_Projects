@@ -1,0 +1,313 @@
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.nav-item {
+  justify-content: end;
+}
+
+a .navbar-brand {
+  color: teal;
+  font-size: small;
+}
+
+.main-container {
+  background-color: whitesmoke;
+  height: 800px;
+}
+
+#signupButton {
+  width: 60%;
+  border-radius: 50%;
+}
+
+#signupButton:hover {
+  background-color: teal;
+  color: black;
+}
+
+#loginButton {
+  width: 60%;
+  border-radius: 50%;
+}
+
+#loginButton:hover {
+  background-color: teal;
+  color: black;
+}
+
+.signUpLink {
+  text-align: center;
+  font-size: medium;
+}
+
+.close {
+  color: teal;
+  background-color: white;
+  border: none;
+  font-size: 30px;
+}
+
+.name-label {
+  margin-left: 50px;
+}
+.modal-body .md-form {
+  margin-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.modal-body #orangeForm-name,
+.modal-body #orangeForm-email,
+.modal-body #orangeForm-pass {
+  margin-bottom: 0;
+  padding-right: 80px;
+}
+
+.modal-body .md-form input {
+  width: 80%;
+  margin-left: 50px;
+}
+
+.carousel-indicators {
+  bottom: 20px;
+}
+
+.carousel-inner {
+  height: 200px;
+  width: 100px;
+  padding-left: 30%;
+}
+
+.main-container {
+  background-color: teal;
+}
+.main-container2 {
+  background-color: white;
+}
+
+#websiteTitle {
+  margin-left: 20px;
+}
+
+#img-ebay {
+  align-items: center;
+  padding: 0;
+}
+
+#carouselExampleDark {
+  align-items: center;
+  width: 50%;
+}
+
+.main-container {
+  background-color: white;
+  height: 800px;
+}
+
+.profile-container {
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 50px;
+}
+
+.profile-info-table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.profile-info-table tr {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-info-table td {
+  padding: 5px;
+}
+
+.profile-info-table td:first-child {
+  font-weight: bold;
+}
+
+.profile-actions,
+.profile-forgot {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.profile-actions button,
+.profile-forgot button {
+  padding: 5px 10px;
+  background-color: teal;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card-group {
+  margin-left: 5%;
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.scroll-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+#firstCard {
+  margin-right: 10px;
+}
+
+#fourthCard {
+  margin-left: 10px;
+}
+
+#secondCard {
+  margin-right: 10px;
+}
+
+#seventhCard {
+  margin-left: 10px;
+}
+
+#sixthCard {
+  margin-left: 10px;
+}
+
+.productsTitle {
+  margin-left: 2%;
+}
+
+.card-img-top {
+  padding: 10px;
+  border: 1px solid #8888;
+  border-radius: 20px;
+}
+
+.siteDescription {
+  margin-left: 5%;
+}
+
+#updateLink:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+#forgotPassword:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+#productsTitle {
+  display: inline-block;
+}
+
+.productTitle2 {
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.btn-warning {
+  align-items: center;
+}
+
+.card-title {
+  white-space: normal;
+}
+
+.slider {
+  background-color: #2f3c7e;
+  color: #fbeaeb;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.container {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.compare-logo {
+  text-align: center;
+}
+
+.compare-logo img {
+  width: 200px;
+}
+
+.logo-amazon {
+  padding: 30px;
+}
+
+#more {
+  display: none;
+}
+
+.container button {
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: none;
+  border: 0;
+  color: #1c0ed5;
+  box-shadow: none;
+}
+
+footer {
+  padding: 40px 0;
+  color: white;
+  background: black;
+}
+
+footer a {
+  color: white;
+}
+
+
+#contactUsDiv {
+  width: 200px;
+  white-space: nowrap;
+}
+
+/* styles.css */
+.custom-table {
+  border-spacing: 0 10px; /* Spacing between rows */
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #0d0d0d;
+  padding: 10px;
+  text-align: left;
+}
+
+.custom-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row background color */
+}
+
+.bold-price{
+  font-weight: bold;
+}
+
+.main-container3{
+  margin-bottom: 300px;
+}
+
+.profile-container{
+  margin-bottom: 50px;
+}

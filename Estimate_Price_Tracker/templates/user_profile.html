@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/styles.css') }}"
+    />
+    <script defer src="{{ url_for('static', filename='index.js') }}"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">User Home</a>
+        <button class="btn btn-outline-light" id="backButton">
+          Back
+        </button>
+        
+      </div>
+    </nav>
+
+    <div class="profile-container">
+      <h1>Profile Details</h1>
+      <table class="profile-info-table">
+        <tbody>
+          <tr>
+            <td>UserName</td>
+            <td>{{ user.username }}</td>
+          </tr>
+          <tr>
+            <td>First Name</td>
+            <td>{{ user.first_name }}</td>
+          </tr>
+          <tr>
+            <td>Last Name</td>
+            <td>{{ user.last_name }}</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>{{ user.email }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="profile-actions">
+         <!--<a href= '#' id= "updateLink" class= "btn btn-default btn-rounded mb-4" data-bs-toggle="modal fade" data-bs-target="#modalUpdateForm">EDIT</a>-->
+         <button class="btn btn-outline-light" id="updateLink" data-bs-toggle="modal fade" data-bs-target="#modalUpdateForm">
+          Edit
+        </button>
+      </div>
+    </div>
+<!-- update modal -->
+<div
+class="modal fade"
+id="modalUpdateForm"
+tabindex="-1"
+role="dialog"
+aria-labelledby="myModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header text-center">
+      <h4 class="modal-title w-100 font-weight-bold">Update Details</h4>
+      <button
+        type="button"
+        class="close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body mx-1">
+      <form id="updationForm" action="/update_user" method="POST">
+        <label
+        class="name-label"
+        data-error="wrong"
+        data-success="right"
+        for="orangeForm-username"
+        >User Name</label
+      >
+      <div class="md-form mb-4">
+        <i class="fas fa-user prefix grey-text"></i>
+        <input
+          type="text"
+          id="orangeForm-username"
+          name="username"
+          class="form-control validate"
+        />
+      </div>
+      <label
+        class="name-label"
+        data-error="wrong"
+        data-success="right"
+        for="orangeForm-firstname"
+        >First Name</label
+      >
+      <div class="md-form mb-4">
+        <i class="fas fa-user prefix grey-text"></i>
+        <input
+          type="text"
+          id="orangeForm-firstname"
+          name = "first_name"
+          class="form-control validate"
+        />
+      </div>
+
+      <label
+        class="name-label"
+        data-error="wrong"
+        data-success="right"
+        for="orangeForm-lastname"
+        >Last Name</label
+      >
+      <div class="md-form mb-4">
+        <i class="fas fa-user prefix grey-text"></i>
+        <input
+          type="text"
+          id="orangeForm-lastname"
+          name = "last_name"
+          class="form-control validate"
+        />
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-dark" id="updateButton" type="submit" form="updationForm">Update</button>
+        <!-- Container to display the registration response -->
+        <div id="updationResponse" class="mt-3"></div>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="text-center text-lg-start text-white bg-dark">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">
+            Estimate It
+          </h6>
+          <div class="text-start">
+            <p>
+              Effortlessly manage project budgets with the Estimate Price
+              Tracker.
+            </p>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none" />
+
+        <hr class="w-100 clearfix d-md-none" />
+
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none" />
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+    
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <div id="contactUsDiv">
+            <p>
+              Have questions, suggestions, or feedback <br><br>
+              Please email us at <a class="text-white" id = "connectUsEmailLink" href= "mailto:connect@estimateit.com">connect@estimateit.com</a>
+            </p>
+          </div>
+      </div>  
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div
+    class="text-center p-3"
+    style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2023 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/"
+      >estimateit.com</a
+    >
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

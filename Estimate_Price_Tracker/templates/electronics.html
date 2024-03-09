@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronics</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/styles.css') }}"
+    />
+    <script defer src="{{ url_for('static', filename='index.js') }}"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <section class="main-container2">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">EstiMateIt</a>
+          <button class="btn btn-outline-light" id="backButton">Back</button>
+        </div>
+      </nav>
+      <h2 class="productsTitle mt-3"><u> Electronics</u></h2>
+      <hr />
+      <div class="card-group">
+        <div
+          class="card border border-info shadow-0 bg-light mb-3"
+          id="firstCard"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">Smartphone</div>
+          <img
+            src="{{ url_for('static', filename='assets/images/pixel7a.jpg') }}"
+            height="250px"
+            width="auto"
+            class="card-img-top"
+            alt="Google Pixel 7a Photo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Google Pixel 7a</h5>
+            <a
+              href="/compare_prices?amazon_url=https://a.co/d/8wqHhMS&ebay_url=https://www.ebay.com/itm/325661593466?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=1PO9jDhpTTO&sssrc=4429486&ssuid=8jcvtrvssmq&var=&widget_ver=artemis&media=WHATS_APP"
+              ><button type="button" class="btn btn-warning" id="compareButton">
+                Compare Prices
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="card border border-info shadow-0 bg-light mb-3"
+          id="firstCard"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">Laptop</div>
+          <img
+            src="{{ url_for('static', filename='assets/images/lenovoLaptop.jpg') }}"
+            height="250px"
+            width="auto"
+            class="card-img-top"
+            alt="Watches Photo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Lenovo Thinkpad Laptop</h5>
+            <a
+              href="/compare_prices?amazon_url=https://www.amazon.com/dp/B0CG18RXSC?ref_=cm_sw_r_cso_wa_apin_dp_B6GRTSVZ6GSPP2PBT8P5&cafHiResImg=1&language=en-US&th=1&ebay_url=https://www.ebay.com/itm/155581405709?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=7v2xfTH1TZO&sssrc=4429486&ssuid=8jcvtrvssmq&var=&widget_ver=artemis&media"
+              ><button type="button" class="btn btn-warning" id="compareButton">
+                Compare Prices
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="card border border-info shadow-0 bg-light mb-3"
+          id="firstCard"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">Smartphone</div>
+          <img
+            src="{{ url_for('static', filename='assets/images/iPhone13.jpg') }}"
+            height="250px"
+            width="auto"
+            class="card-img-top"
+            alt="Google Pixel 7a Photo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Apple IPhone 13</h5>
+            <a
+              href="/compare_prices?amazon_url=https://a.co/d/3We2gaz&ebay_url=https://www.ebay.com/itm/384856374632?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=t-vG9U14Sqq&sssrc=4429486&ssuid=8jcvtrvssmq&var=652760238164&widget_ver=artemis&media=WHATS_APP"
+            >
+              <button type="button" class="btn btn-warning" id="compareButton">
+                Compare Prices
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+    <footer class="text-center text-lg-start text-white bg-dark">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                Estimate It
+              </h6>
+              <div class="text-start">
+                <p>
+                  Effortlessly manage project budgets with the Estimate Price
+                  Tracker.
+                </p>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+        
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <div id="contactUsDiv">
+                <p>
+                  Have questions, suggestions, or feedback <br><br>
+                  Please email us at <a class="text-white" id = "connectUsEmailLink" href= "mailto:connect@estimateit.com">connect@estimateit.com</a>
+                </p>
+              </div>
+          </div>  
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/"
+          >estimateit.com</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+      <div class="card-group"></div>
+    </section>
+  </body>
+</html>
